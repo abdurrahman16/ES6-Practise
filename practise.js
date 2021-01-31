@@ -44,18 +44,40 @@
 // const result = Math.max(...TakaPoisha); //' using 3 dots
 // console.log(result);
 
-class student {
+// class student {
 
-constructor(sId,sName){
-    this.id = sId;
-    this.name = sName;
-    this.name2 = "khalamma";
+// constructor(sId,sName){
+//     this.id = sId;
+//     this.name = sName;
+//     this.name2 = "khalamma";
+// }
+
+// }
+
+// const student1 = new student(1,"mahi");
+// const student2 = new student(2,"mahiya");
+// const student3 = new student(3,"bappi");
+
+// console.log(student3);
+
+class parent {
+    constructor(){
+        this.fatherName ="baba";
+    }
 }
 
+class child extends parent {
+    constructor(name){
+        super();
+        this.name = name;
+    }
+
+    getFullName (){
+        return this.name + ' '+ this.fatherName;
+    }
 }
 
-const student1 = new student(1,"mahi");
-const student2 = new student(2,"mahiya");
-const student3 = new student(3,"bappi");
-
-console.log(student3);
+const baby = new child ("Arnold");
+const baby2 = new child ("Tom");
+console.log(baby.getFullName());
+console.log(baby2);
