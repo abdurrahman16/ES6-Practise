@@ -60,24 +60,37 @@
 
 // console.log(student3);
 
-class parent {
-    constructor(){
-        this.fatherName ="baba";
-    }
-}
+// class parent {
+//     constructor(){
+//         this.fatherName ="baba";
+//     }
+// }
 
-class child extends parent {
-    constructor(name){
-        super();
-        this.name = name;
-    }
+// class child extends parent {
+//     constructor(name){
+//         super();
+//         this.name = name;
+//     }
 
-    getFullName (){
-        return this.name + ' '+ this.fatherName;
-    }
-}
+//     getFullName (){
+//         return this.name + ' '+ this.fatherName;
+//     }
+// }
 
-const baby = new child ("Arnold");
-const baby2 = new child ("Tom");
-console.log(baby.getFullName());
-console.log(baby2);
+// const baby = new child ("Arnold");
+// const baby2 = new child ("Tom");
+// console.log(baby.getFullName());
+// console.log(baby2);
+
+
+const person ={name: 'Jack Ma', age:12, job:'fb',gfName:'ruba'};
+
+const {age} =person;
+
+
+
+
+const gfName = person.gfName;
+// // const job = person.job;
+// // console.log(gfName, job);
+console.log(gfName, age);
