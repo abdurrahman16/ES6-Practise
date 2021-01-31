@@ -40,6 +40,22 @@
 // const allAges3 = [...ages,...ages2,...ages3,1000];
 // console.log(allAges3);
 
-const TakaPoisha = ['12','190','99900'];
-const result = Math.max(...TakaPoisha);
-console.log(result);
+// const TakaPoisha = ['12','190','99900'];
+// const result = Math.max(...TakaPoisha); //' using 3 dots
+// console.log(result);
+
+class student {
+
+constructor(sId,sName){
+    this.id = sId;
+    this.name = sName;
+    this.name2 = "khalamma";
+}
+
+}
+
+const student1 = new student(1,"mahi");
+const student2 = new student(2,"mahiya");
+const student3 = new student(3,"bappi");
+
+console.log(student3);
